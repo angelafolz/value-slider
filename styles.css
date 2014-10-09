@@ -19,32 +19,6 @@
 	position: absolute;
 }
 
-table {
-	width: 350px;
-	margin: 0 0 10px 85px;
-}
-
-td:nth-child(2) {
-	text-align: center;
-}
-
-td:last-child {
-	text-align: right;
-}
-
-.slider {
-	margin-bottom: 10px;
-}
-
-.slider label {
-	display: inline-block;
-	width: 100px;
-}
-
-input[type="range"] {
-	width: 300px;
-}
-
 #lowval {
 	left: 25px; /* 25 = 500(square footage) / 20 */
 	bottom: 25px; /* 25 = 50000(house value) / 2000 */
@@ -71,4 +45,30 @@ input[type="range"] {
     position: absolute;
 	left: -65px;
     bottom: 270px;
+}
+
+table {
+	width: 350px;
+	margin: 0 0 10px 85px;
+}
+
+td:nth-child(2) {
+	text-align: center;
+}
+
+td:last-child {
+	text-align: right;
+}
+
+.slider {
+	margin-bottom: 10px;
+}
+
+.slider label {
+	display: inline-block;
+	width: 100px;
+}
+
+input[type="range"] {
+	width: 300px;
 }

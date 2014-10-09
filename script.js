@@ -22,14 +22,33 @@ function displayValue() {
 	document.getElementById("valuenum").innerHTML = "$" + housevalue.toString();
 }
 
+function resetSliders() {
+	document.getElementById("condition").value = 0;
+	document.getElementById("renovation").value = 0;
+	document.getElementById("factor3").value = 0;
+	document.getElementById("factor4").value = 0;
+	conditionslider = renovationslider = factor3slider = factor4slider = 0;
+}
 
+
+// determine and show initial house value
 
 document.getElementById("submit").addEventListener("click", function() {
-	sqfoot = document.getElementById("sqfoot").value;
-	initialValue();
-	displayValue();
-	document.getElementById("housevalue").style.display = "block";
+	var sfvalue = document.getElementById("sqfoot").value;
+	if (500 <= sfvalue && sfvalue <= 10000 ){
+		resetSliders();
+		sqfoot = sfvalue;
+		initialValue();
+		displayValue();
+		document.getElementById("housevalue").style.display = "block";
+	}
+	else {
+		alert("Please enter a value between 500 and 10000.");
+	}
 });
+
+
+// adjust house value from slider input
 
 document.getElementById("condition").addEventListener("change", function() {
 	adjustValue(this.value, conditionslider);
