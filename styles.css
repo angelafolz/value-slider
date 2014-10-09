@@ -1,0 +1,74 @@
+.value {
+	margin-top: 10px;
+}
+
+.chart {
+	width: 500px;
+	height: 500px;
+	background-color: #ccc;
+	position: relative;
+	margin: 20px 0;
+	padding: 35px 35px 0 0;
+}
+
+.chart div {
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: #666;
+	position: absolute;
+}
+
+table {
+	width: 350px;
+	margin: 0 0 10px 85px;
+}
+
+td:nth-child(2) {
+	text-align: center;
+}
+
+td:last-child {
+	text-align: right;
+}
+
+.slider {
+	margin-bottom: 10px;
+}
+
+.slider label {
+	display: inline-block;
+	width: 100px;
+}
+
+input[type="range"] {
+	width: 300px;
+}
+
+#lowval {
+	left: 25px; /* 25 = 500(square footage) / 20 */
+	bottom: 25px; /* 25 = 50000(house value) / 2000 */
+}
+
+#highval {
+	left: 500px; /* 500 = 10000(square footage) / 20 */
+	bottom: 500px; /* 500 = 1000000(house value) / 2000 */
+}
+
+#housevalue {
+	display: none;
+	background-color: blue;
+	z-index: 2;
+}
+
+#line {
+	width: 670px;
+	height: 1px;
+	background-color: #666;
+    -webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+	left: -65px;
+    bottom: 270px;
+}
